@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Module 3 Exercise</title>
+</head>
+
+<body>
+    <h1>List Builder</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <h2>Form to obtain a word and place it in a list</h2>
+            <form name="myForm">
+            Word to check: <input type="text" name="newWord" value=""><br />
+            List 1 or 2?: <input type="number" name="newNumber" value=""><br /><br />
+            <input type="button" value="Add to List" onclick="validateANDadd()">
+        </form>
+    </div>
+    <div class="myflexboxColumn">
+        <h2>List 1</h2>
+        <table id="myList1">
+        </table>
+        <br /> <br />
+        <input type="button" value="Clear" onclick="clearList1()">
+        </div>
+    <div class="myflexboxColumn">
+        <h2>List 2</h2>
+        <table id="myList2">
+        </table>
+        <br /><br />
+        <input type="button" value="Clear" onClick="clearList2()">
+    </div>
+
+
+
+
+</body>
+</html>

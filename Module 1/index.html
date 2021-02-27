@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1
+    </title>
+    <link rel="stylesheet" href="style.css">
+    
+<script>
+    function myFunction() {
+        var userName = document.getElementById("name").value
+        document.getElementById("message").innerHTML= `Welcome ${userName}!`
+    }
+</script>
+
+</head>
+<body>
+    <H1>Hello!</H1>
+    <Form>
+        <Label for="name">What is your name?</Label>
+        <input type="text" id="name" name="name">
+    </Form>
+    <button type="button" onClick="myFunction()">Submit</button>
+    <p id="message"></p>
+</body>
+</html>

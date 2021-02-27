@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class='some-page-wrapper'>
+        <div class='column'>
+                Entry 1 - Hyperlink
+                <a href="https://www.youtube.com/watch?v=CGwKF4_YbPw">Patrick</a>
+            </div>
+        <div class='column'>
+                Entry 2 - Image
+                <img src="emote2.jpg" alt="Ivan" style="width: 150px;height: 200px;">
+            </div>
+        <div class='column'>
+                Entry 3 - Video
+                <video width="320" height = "240" controls>
+                    <source src="comeHere.mp4" type="video/mp4">
+                </video>
+            </div>
+        <div class='column'>
+                Entry 4 - Geolocation API
+                <button onClick="getLocation()">Try It</button>
+                <p id="demo"></p>
+                <script>
+                    var x = document.getElementById("demo");
+                    function getLocation() {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(showPosition);
+                        } else {
+                            x.innerHTML = "Geolocation is not supported by this browser.";
+                        }
+                    }
+
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+                }
+                </script>
+            </div>
+</div>
+  
+</body>
+</html>

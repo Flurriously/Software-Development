@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Day Survey
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <p style="text-align: center">Stop Day Student Form</p>
+    <i> <h1 style="text-align:center">We value your input!</h1> </i>
+    
+
+    <form action="/action_page.php"
+    onsubmit="myFunction()">
+
+    <h2 for="studentname">Student Name</h2>
+    <input type="text"
+        id="studentname"
+        name="studentname" required>
+
+    <h3 for="studentemail">Student Email</h3>
+    <input type="text"
+        id="studentemail"
+        name="studentemail" required>
+
+    <h4 for="years">Select what year you are currently!</h4>
+    <select name="years" id="years" style="width: 150px;">
+        <option value="Freshman" selected>Freshman</option>
+        <option value="Sophmore">Sophmore</option>
+        <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+    </select>
+
+    <h5 style="text-align: start;">Select your favorite catering option!</h5>
+    <input type="radio" id="Rasin Canes" name="Catering" value="Rasin Canes" required>
+    <label for="Rasin Canes">Rasin Canes</label><br>
+    <input type="radio" id="Dunkin Donuts" name="Catering" value="Dunkin Donuts">
+    <label for="Dunkin Donuts">Dunkin Donuts</label><br>
+
+    <h6 style="text-align: start;">Do you love Stop Day?</h6>
+    <input type="checkbox" id="excitement" name="excitement" value="Yes" required>
+    <label for="excitement">Yes!</label><br>
+    <input type="checkbox" id="denial" name="denial" value="No">
+    <label for="denial">No!</label><br>
+
+    <br>
+    <br>
+
+    <info for="StopDayComments" style="text-align: start;">Comments:</info>
+    <br>
+    <br>
+    <textarea id="comments" name="comments" rows="4" cols="50">
+     
+    </textarea>
+
+    <br>
+    <br>
+
+    <submission>
+        <input type="submit" value="Submit">
+    </submission>
+</form>
+
+    <script>
+        function myFunction() {
+            alert("The form was submitted");
+        }
+    </script>
+
+</body>
+</html>
