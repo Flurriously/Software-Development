@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Module 3 Assignment</title>
+</head>
+
+<body>
+    <h1>Palindrome</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <h2>Form to obtain a word and check if it is a palindrome</h2>
+            <form name="myForm">
+            Word to check: <input type="text" name="newWord" value=""><br />
+            Algorithm 1 or 2?: <input type="number" name="newNumber" value=""><br /><br />
+            <input type="button" value="Add to assigned algorithm" onclick="validateANDadd()">
+        </form>
+    </div>
+    <div class="myflexboxColumn">
+        <h2>Algorithm 1</h2><br>
+        <p>(word: palindrome?)</p>
+        <table id="myList1">
+        </table>
+        <br /> <br />
+        <input type="button" value="Clear" onclick="clearList1()">
+        </div>
+    <div class="myflexboxColumn">
+        <h2>Algorithm 2</h2><br>
+        <p>(word: palindrome?)</p>
+        <table id="myList2">
+        </table>
+        <br /><br />
+        <input type="button" value="Clear" onClick="clearList2()">
+    </div>
+
+
+
+
+</body>
+</html>
